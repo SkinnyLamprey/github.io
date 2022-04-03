@@ -15,22 +15,25 @@
                     display: grid;
                     grid-template-columns: auto 1fr;
                     grid-template-rows: auto 1fr auto;
-                    grid-gap: 1px;
+                    grid-gap: 0px;
                     grid-template-areas: 
-                        "header header"
+                        "advert header"
                         "advert content"
                         "advert footer";
                 }
                 .header {
                     background: black;
+                    min-height: 100px;
                     grid-area: header;
                     color: white;
                     font-family: 'Pacifico', cursive;
-                    padding: 0px 0px 0px 60px;
+                    
+                    margin: -10px -10px 0px -10px;
                 }
                 .advert {
-                    background: darkgrey;
+                    background: black;
                     grid-area: advert;
+                    margin: -10px 0px 0px -10px;
                 }
                 .content {
                     background: white;
@@ -40,6 +43,7 @@
                     background: black;
                     color: white;
                     grid-area: footer;
+                    
                 }
                 .nav-bar {
                     background-color: black;
@@ -53,8 +57,8 @@
         </head>
         <body>
             <div class="container">
-                <div class="header"><h1>Best of Trends</h1></div>
-                <div class="advert">advert</div>
+                <div class="header"></div>
+                <div class="advert"><img src="https://github.com/SkinnyLamprey/skinnylamprey.github.io/blob/main/images/BoTLogo.png?raw=true" width="100px"></div>
                 <div class="content">
                     <p>The very best of trends on 3rd April 2022</p>
 
