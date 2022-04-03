@@ -3,16 +3,19 @@
         <head>
             <title>Skinny Lamprey</title>
             <meta name="description" content="Visit Skinny Lamprey for the best or trends.">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
             <style>
                 .container { 
                     font-size: 1.5em;
-                    min-height: 300px;
+                    
                     width: 100%;
                     background: lightgray;
                     display: grid;
                     grid-template-columns: auto 1fr;
                     grid-template-rows: auto 1fr auto;
-                    grid-gap: 0px;
+                    grid-gap: 1px;
                     grid-template-areas: 
                         "header header"
                         "advert content"
@@ -21,19 +24,21 @@
                 .header {
                     background: black;
                     grid-area: header;
-                    color: whitesmoke;
+                    color: white;
+                    font-family: 'Pacifico', cursive;
+                    padding: 0px 0px 0px 60px;
                 }
                 .advert {
-                    background: lightcoral;
+                    background: darkgrey;
                     grid-area: advert;
                 }
                 .content {
-                    background: paleturquoise;
+                    background: white;
                     grid-area: content;
                 }
                 .footer {
                     background: black;
-                    color: whitesmoke;
+                    color: white;
                     grid-area: footer;
                 }
                 .nav-bar {
@@ -57,7 +62,7 @@
 
 
                 </div>
-                <div class="footer">footer</div>
+                <div class="footer"><a href="#">Privacy Policy</a></div>
 
 
                 
