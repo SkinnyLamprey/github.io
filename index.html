@@ -4,12 +4,19 @@
             <title>Skinny Lamprey</title>
             <meta name="description" content="Visit Skinny Lamprey for the best or trends.">
             <style>
-                .comtainer { 
+                .container { 
                     font-size: 1.5em;
                     min-height: 300px;
                     width: 100%;
                     background: lightgray;
                     display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-template-rows: auto 1fr auto;
+                    grid-gap: 10px;
+                    grid-template-areas: 
+                        "advert header"
+                        "advert content"
+                        "advert footer";
 
                 }
                 .nav-bar {
