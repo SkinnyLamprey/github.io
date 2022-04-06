@@ -6,6 +6,10 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+            
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
             <style>
                 .container { 
                     font-size: 1.5em;
@@ -17,11 +21,22 @@
                     grid-template-rows: auto 1fr auto;
                     grid-gap: 0px;
                     grid-template-areas: 
-                        "advert header"
+                        "logo header"
                         "advert content"
                         "advert footer";
                 }
+                .logo {
+                    background: black;
+                    grid-area: logo;
+                    color: white;
+                    margin: -10px 0px 0px -10px;
+                    font-family: 'Monoton', cursive;
+                    font-size: 2em;
+                    text-align: centre;
+                    padding: 20px;
+                }
                 .header {
+                    
                     background: black;
                     min-height: 100px;
                     grid-area: header;
@@ -29,11 +44,16 @@
                     font-family: 'Pacifico', cursive;
                     
                     margin: -10px -10px 0px -10px;
+                    posi tion: fixed;
                 }
                 .advert {
                     background: black;
                     grid-area: advert;
                     margin: -10px 0px 0px -10px;
+                    font-family: 'Monoton', cursive;
+                    color: white;
+                    
+                    
                 }
                 .content {
                     background: white;
@@ -57,10 +77,15 @@
         </head>
         <body>
             <div class="container">
-                <div class="header"></div>
-                <div class="advert"><img src="https://github.com/SkinnyLamprey/skinnylamprey.github.io/blob/main/images/BoTLogo.png?raw=true" width="100px"></div>
-                <div class="content">
-                    <p>The very best of trends on 3rd April 2022</p>
+                <nav class="header"></nav>
+                <!--<div class="advert"><img src="https://github.com/SkinnyLamprey/skinnylamprey.github.io/blob/main/images/BoTLogo.png?raw=true" width="100px"></div>
+                -->
+                <div class="logo">BOT</div>
+                <div class="advert"></div>
+                    <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
 
 
